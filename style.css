@@ -1,0 +1,220 @@
+:root {
+    --primary-: #141D2F;
+    --secondary-: #1E2A47;
+    --button-: #0079D3;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'space mono', sans-serif;
+}
+
+p {
+    font-size: 15px;
+    line-height: 25px;
+    font-family: 'space mono regular';
+}
+
+body {
+    background-color: var(--primary-);
+}
+
+h1 {
+    font-size: 26px;
+    line-height: 36px;
+    font-family: 'space mono bold';
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 33px;
+    font-family: 'space mono bold';
+}
+
+h4 {
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'space mono bold';
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    width: 100%;
+    max-width: 730px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+
+    .headerText {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .theme {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+
+            img {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .search {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--secondary-);
+        width: 100%;
+        max-width: 730px;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px 0;
+
+        .searchInput {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            input {
+                background-color: var(--secondary-);
+                border: none;
+                color: white;
+                font-size: 15px;
+                width: 100%;
+
+                &::placeholder {
+                    color: white;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .userResult {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .error {
+                color: red;
+                font-size: 15px;
+                font-weight: bold;
+            }
+    
+            button {
+                background-color: var(--button-);
+                border: none;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+    
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: var(--secondary-);
+        border-radius: 10px;
+        padding: 10px 10px;
+
+        .profile {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            justify-content: space-between;
+            padding: 10px 20px;
+            margin-top: 20px;
+
+            .userAccount {
+                display: flex;
+                justify-content: space-between;
+
+                .username {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    color: #0079FF;
+                    font-family: 'space mono regular';
+                }
+
+                .date, .joinDate {
+                   word-spacing: 5px;
+                   font-family: 'space mono regular';
+                   line-height: auto;
+                   letter-spacing: 0.5px;
+                   font-size: 15px;
+                   margin-top: 5px;
+                }
+            }
+
+            img {
+                border-radius: 50%;
+                width: 150px;
+                height: 120px;
+                padding: 10px;
+            }
+
+            .userInfo {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 10px;
+                width: 100%;
+            }
+
+            .userStats {
+                display: flex;
+                gap: 20px;
+                justify-content: space-between;
+                background-color: var(--primary-);
+                border-radius: 10px;
+                padding: 10px 20px;
+            }
+
+            .userLinks {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+                margin-top: 20px;
+                padding: 0 20px;
+
+                .link {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .icon {
+                        border-radius: 0%;
+                        width: 40px;
+                        height: 40px;
+                        object-fit: contain;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}   

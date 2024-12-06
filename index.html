@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | GitHub user search app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="headerText">
+      <h1>devfinder</h1>
+      <p class="theme">Dark<img src="./assets/icon-moon.svg" alt="moon icon"></p>
+    </div>
+
+    <form class="search">
+      <div class="searchInput">
+        <img src="./assets/icon-search.svg" alt="search icon">
+        <input type="text" placeholder="Search GitHub username...">
+      </div>
+      <div class="userResult">
+        <span class="error"></span>
+        <button type="submit">Search</button>
+      </div>
+    </form>
+    
+
+    <main>
+      <div class="profile">
+        <img src="./assets/anime_profile.jpg" alt="avatar" id="avatar">
+        <div class="userInfo">
+
+          <div class="userAccount">
+            <div>
+              <h1 class="name" id="name">The Octocat</h1>
+              <a href="#" class="username" id="usernameLink">@ <p id="username">octocat</p></a>
+            </div>
+            <h4 class="date">Joined <span class="joinDate" id="joinDate">25 Jan 1979</span></h4>
+          </div>
+
+          <div class="userBio">
+            <p class="bio" id="bio">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>
+          </div>
+
+          <div class="userStats">
+            <div class="stats">
+              <h4>Repos</h4>
+              <h2 class="repo" id="repo">8</h2>
+            </div>
+            <div class="stats">
+              <h4>Followers</h4>
+              <h2 class="followers" id="followers">3800</h2>
+            </div>
+            <div class="stats">
+              <h4>Following</h4>
+              <h2 class="following" id="following">9</h2>
+            </div>
+          </div>
+
+          <div class="userLinks">
+            <div class="link">
+              <img src="./assets/icon-location.svg" alt="location icon" class="icon">
+              <h4 class="location" id="location">San Francisco</h4>
+            </div>
+            <div class="link">
+              <img src="./assets/icon-website.svg" alt="website icon" class="icon">
+              <h4 class="website"><a href="#" id="website">https://github.com</a></h4>
+            </div>
+            <div class="link">
+              <img src="./assets/icon-twitter.svg" alt="twitter icon" class="icon">
+              <h4 class="twitter"><a href="#" id="twitter">@github</a></h4>
+            </div>
+            <div class="link">
+              <img src="./assets/icon-company.svg" alt="company icon" class="icon">
+              <h4 class="company" id="company">@github</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div class="attribution" style="color: white;">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">ZenithSUS</a>.
+  </div>
+
+  <script src="./githubApi.js"></script>
+</body>
+</html>
